@@ -18,14 +18,13 @@ if(localStorage.token) {
   setAuthToken(localStorage.token);
 }
 
-
 const App = () => {
   return (
     <AuthState>
       <ContactState>
         <AlertState>
           <Router>
-            <Fragment className="App">
+            <Fragment>
               <Navbar/>
               <div className="container">
                 <Alerts />
